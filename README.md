@@ -55,6 +55,33 @@ npm run build
 - PDF/print and Excel exports.
 - Local SQLite backup and restore.
 
+## Screenshots
+
+<p align="center">
+  <img src="docs/screenshots/01-dashboard-overview.png" alt="Danix dashboard overview" width="900">
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/02-user-permissions-backup.png" alt="Danix user permissions and backup screen" width="900">
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/04-properties-management.png" alt="Danix property management screen" width="900">
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/05-payables-overview.png" alt="Danix payables overview" width="900">
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/06-add-invoice-modal.png" alt="Danix invoice registration modal" width="900">
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/08-cost-analysis.png" alt="Danix cost analysis screen" width="900">
+</p>
+
+
 ## Development and Build
 
 Run browser mode:
