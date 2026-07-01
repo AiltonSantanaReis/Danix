@@ -18,3 +18,36 @@ tmp-user-security-captures/
 
 *.log
 *.tsbuildinfo
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# SQLite databases
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+database/
+
+# Build outputs
+out/
+release/
+build/
+
+# Electron/Windows binaries
+*.exe
+*.dll
+*.pak
+*.bin
+*.dat
+
+# Archives
+*.zip
+*.rar
+*.7z
+
+# More temporary visual captures
+tmp-popup-captures/

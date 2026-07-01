@@ -1,10 +1,19 @@
 @echo off
 setlocal
 set "ROOT=%~dp0"
-set "NODE_DIR=%ROOT%.tools\node-v20.19.3-win-x64"
-set "NODE=%NODE_DIR%\node.exe"
-set "PATH=%NODE_DIR%;%PATH%"
 set "ELECTRON_RUN_AS_NODE="
+
+set "NODE="
+for /f "delims=" %%I in ('where node') do (
+  set "NODE=%%I"
+  goto :node_found
+)
+
+echo [build-portable] Node.js nao encontrado no PATH.
+echo Instale Node.js 20 LTS ou superior e tente novamente.
+exit /b 1
+
+:node_found
 
 "%NODE%" --preserve-symlinks --preserve-symlinks-main "%ROOT%node_modules\next\dist\bin\next" build --webpack
 if errorlevel 1 exit /b %errorlevel%
