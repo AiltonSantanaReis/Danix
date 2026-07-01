@@ -57,29 +57,40 @@ npm run build
 
 ## Screenshots
 
-<p align="center">
-  <img src="docs/screenshots/01-dashboard-overview.png" alt="Danix dashboard overview" width="900">
-</p>
+A few screens from the Danix desktop application.
 
-<p align="center">
-  <img src="docs/screenshots/02-user-permissions-backup.png" alt="Danix user permissions and backup screen" width="900">
-</p>
-
-<p align="center">
-  <img src="docs/screenshots/04-properties-management.png" alt="Danix property management screen" width="900">
-</p>
-
-<p align="center">
-  <img src="docs/screenshots/05-payables-overview.png" alt="Danix payables overview" width="900">
-</p>
-
-<p align="center">
-  <img src="docs/screenshots/06-add-invoice-modal.png" alt="Danix invoice registration modal" width="900">
-</p>
-
-<p align="center">
-  <img src="docs/screenshots/08-cost-analysis.png" alt="Danix cost analysis screen" width="900">
-</p>
+<table>
+  <tr>
+    <td width="50%">
+      <strong>Dashboard Overview</strong><br />
+      <img src="docs/screenshots/01-dashboard-overview.png" alt="Danix dashboard overview" width="100%" />
+    </td>
+    <td width="50%">
+      <strong>User Permissions and Backup</strong><br />
+      <img src="docs/screenshots/02-user-permissions-backup.png" alt="Danix user permissions and backup" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <strong>Properties Management</strong><br />
+      <img src="docs/screenshots/04-properties-management.png" alt="Danix properties management" width="100%" />
+    </td>
+    <td width="50%">
+      <strong>Payables Overview</strong><br />
+      <img src="docs/screenshots/05-payables-overview.png" alt="Danix payables overview" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <strong>Invoice Registration</strong><br />
+      <img src="docs/screenshots/06-add-invoice-modal.png" alt="Danix invoice registration modal" width="100%" />
+    </td>
+    <td width="50%">
+      <strong>Cost Analysis</strong><br />
+      <img src="docs/screenshots/08-cost-analysis.png" alt="Danix cost analysis screen" width="100%" />
+    </td>
+  </tr>
+</table>
 
 
 ## Development and Build
