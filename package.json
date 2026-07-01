@@ -1,0 +1,104 @@
+{
+  "name": "danix-desktop-offline",
+  "version": "1.0.0",
+  "productName": "Danix",
+  "description": "Aplicativo desktop offline Danix para gestao, controle e resultados.",
+  "author": "Danix",
+  "main": "electron/main.cjs",
+  "private": true,
+  "engines": {
+    "node": "20.x"
+  },
+  "scripts": {
+    "dev": ".\\dev.cmd",
+    "dev:web": ".\\dev-web.cmd",
+    "dev:desktop": ".\\.tools\\node-v20.19.3-win-x64\\node.exe --preserve-symlinks --preserve-symlinks-main .\\node_modules\\wait-on\\bin\\wait-on tcp:3000 && .\\dev-desktop.cmd",
+    "dev:web:only": ".\\dev-web.cmd",
+    "dev:desktop:only": ".\\dev-desktop.cmd",
+    "build": ".\\.tools\\node-v20.19.3-win-x64\\node.exe --preserve-symlinks --preserve-symlinks-main .\\node_modules\\next\\dist\\bin\\next build --webpack",
+    "build:desktop": ".\\build-portable.cmd",
+    "start": ".\\.tools\\node-v20.19.3-win-x64\\node.exe --preserve-symlinks --preserve-symlinks-main .\\node_modules\\next\\dist\\bin\\next start",
+    "start:desktop": ".\\.tools\\node-v20.19.3-win-x64\\node.exe --preserve-symlinks --preserve-symlinks-main .\\node_modules\\electron\\cli.js .",
+    "lint": ".\\.tools\\node-v20.19.3-win-x64\\node.exe --preserve-symlinks --preserve-symlinks-main .\\node_modules\\eslint\\bin\\eslint.js .",
+    "typecheck": ".\\.tools\\node-v20.19.3-win-x64\\node.exe --preserve-symlinks --preserve-symlinks-main .\\node_modules\\typescript\\bin\\tsc --noEmit",
+    "demo:seed": ".\\.tools\\node-v20.19.3-win-x64\\node.exe scripts\\seed-demo-data.cjs",
+    "demo:remove": ".\\.tools\\node-v20.19.3-win-x64\\node.exe scripts\\seed-demo-data.cjs --remove",
+    "smoke:api": ".\\.tools\\node-v20.19.3-win-x64\\node.exe scripts\\api-audit-smoke.cjs",
+    "smoke:backup": ".\\.tools\\node-v20.19.3-win-x64\\node.exe scripts\\backup-smoke.cjs",
+    "smoke:crud": ".\\.tools\\node-v20.19.3-win-x64\\node.exe scripts\\crud-regression-smoke.cjs",
+    "smoke:security": ".\\.tools\\node-v20.19.3-win-x64\\node.exe scripts\\security-architecture-smoke.cjs",
+    "smoke:ui": ".\\.tools\\node-v20.19.3-win-x64\\node.exe scripts\\ui-smoke.cjs",
+    "visual:dashboard": ".\\.tools\\node-v20.19.3-win-x64\\node.exe scripts\\dashboard-visual-capture.cjs",
+    "visual:popups": ".\\.tools\\node-v20.19.3-win-x64\\node.exe scripts\\popup-visual-capture.cjs",
+    "visual:user-security": ".\\.tools\\node-v20.19.3-win-x64\\node.exe scripts\\user-security-visual-capture.cjs"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "date-fns": "^4.4.0",
+    "drizzle-orm": "0.45.2",
+    "lucide-react": "^1.18.0",
+    "next": "16.2.9",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "react-hot-toast": "^2.6.0",
+    "recharts": "^3.8.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.1.17",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "22.19.15",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "cross-env": "^10.0.0",
+    "drizzle-kit": "0.31.10",
+    "electron": "39.8.5",
+    "electron-builder": "^26.0.12",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.2.9",
+    "postcss": "8.5.10",
+    "tailwindcss": "4.1.17",
+    "typescript": "5.9.3",
+    "wait-on": "^8.0.5"
+  },
+  "overrides": {
+    "postcss": "8.5.10"
+  },
+  "build": {
+    "appId": "com.danix.desktop",
+    "electronVersion": "39.8.5",
+    "asar": true,
+    "asarUnpack": [
+      "Danix.ico"
+    ],
+    "npmRebuild": false,
+    "buildDependenciesFromSource": false,
+    "files": [
+      "electron/**/*",
+      "Danix.ico",
+      "package.json",
+      "next.config.ts"
+    ],
+    "extraResources": [
+      {
+        "from": ".next/standalone",
+        "to": "standalone",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "Danix.ico",
+        "to": "Danix.ico"
+      }
+    ],
+    "extraMetadata": {
+      "main": "electron/main.cjs"
+    },
+    "win": {
+      "icon": "Danix.ico",
+      "target": [
+        "portable"
+      ]
+    }
+  }
+}

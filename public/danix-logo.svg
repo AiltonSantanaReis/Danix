@@ -1,0 +1,42 @@
+<svg width="900" height="660" viewBox="0 0 900 660" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="danix-gradient" x1="170" y1="80" x2="770" y2="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff9f0a"/>
+      <stop offset="0.25" stop-color="#ff2d8f"/>
+      <stop offset="0.52" stop-color="#246bff"/>
+      <stop offset="0.78" stop-color="#10e0ba"/>
+      <stop offset="1" stop-color="#ff9f0a"/>
+    </linearGradient>
+    <filter id="soft-shadow" x="-8%" y="-8%" width="116%" height="116%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#00072d" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="660" fill="transparent"/>
+
+  <g filter="url(#soft-shadow)">
+    <path d="M212 52H377C492 52 573 128 573 236C573 344 492 420 377 420H212V52ZM292 134V338H377C443 338 488 296 488 236C488 176 443 134 377 134H292Z" fill="url(#danix-gradient)"/>
+    <path d="M226 284C226 274 234 266 244 266C254 266 262 274 262 284V420H226V284Z" fill="url(#danix-gradient)"/>
+    <path d="M279 242C279 232 287 224 297 224C307 224 315 232 315 242V420H279V242Z" fill="url(#danix-gradient)"/>
+    <path d="M332 200C332 190 340 182 350 182C360 182 368 190 368 200V420H332V200Z" fill="url(#danix-gradient)"/>
+    <path d="M484 410L706 82C713 71 726 65 739 65H786C803 65 812 85 801 98L584 355L805 602C817 615 807 636 789 636H735C724 636 713 631 706 622L531 421L458 510L391 510L484 410Z" fill="url(#danix-gradient)"/>
+  </g>
+
+  <g filter="url(#soft-shadow)">
+    <path d="M51 438H148C226 438 281 489 281 559C281 629 226 680 148 680H51V438ZM104 492V626H148C195 626 226 599 226 559C226 519 195 492 148 492H104Z" fill="#071246" transform="translate(0 -70)"/>
+    <path d="M329 611C286 611 254 581 254 539C254 497 286 467 329 467C350 467 367 474 379 487V471H429V607H379V591C367 604 350 611 329 611ZM342 566C363 566 379 551 379 539C379 527 363 512 342 512C321 512 306 527 306 539C306 551 321 566 342 566Z" fill="#071246"/>
+    <path d="M459 471H510V489C521 475 538 467 559 467C592 467 614 489 614 526V607H563V536C563 520 554 511 540 511C523 511 510 523 510 543V607H459V471Z" fill="#071246"/>
+    <path d="M646 471H697V607H646V471ZM671 455C655 455 643 443 643 428C643 413 655 401 671 401C687 401 699 413 699 428C699 443 687 455 671 455Z" fill="#071246"/>
+    <path d="M768 537L718 471H776L799 504L823 471H879L829 536L883 607H824L798 570L772 607H714L768 537Z" fill="url(#danix-gradient)"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="26" letter-spacing="2">
+    <text x="118" y="630" fill="#071246">GESTAO</text>
+    <text x="382" y="630" fill="#071246">CONTROLE</text>
+    <text x="664" y="630" fill="#071246">RESULTADOS</text>
+  </g>
+  <g stroke="#d4d4d8" stroke-width="2" opacity="0.8">
+    <line x1="300" y1="604" x2="300" y2="640"/>
+    <line x1="610" y1="604" x2="610" y2="640"/>
+  </g>
+</svg>
