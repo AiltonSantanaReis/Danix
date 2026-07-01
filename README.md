@@ -1,6 +1,7 @@
 # Danix Desktop Offline
 
 [![CI](https://github.com/AiltonSantanaReis/Danix/actions/workflows/ci.yml/badge.svg)](https://github.com/AiltonSantanaReis/Danix/actions/workflows/ci.yml)
+![Release](https://img.shields.io/github/v/release/AiltonSantanaReis/Danix?label=release)
 
 Offline-first desktop management system for real estate investment control, local financial operations, invoices, suppliers, reports, user access, backups, and Windows desktop delivery.
 
@@ -117,7 +118,7 @@ Run browser mode:
 npm run dev:web
 ```
 
-Run desktop dev mode:
+Run desktop development mode:
 
 ```bash
 npm run dev:desktop
